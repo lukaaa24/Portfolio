@@ -1,0 +1,137 @@
+
+body, h1, p, ul, nav, section, form, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(assets/blue.jpg); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-position: center; 
+    font-family: Arial, sans-serif;
+}
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px; 
+    height: 100vh; 
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    padding: 0;
+    margin: 0;
+    gap: 1rem;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+main {
+    margin-left: 200px; 
+    padding-top: 20px;
+}
+section {
+    padding: 3rem 2rem;
+    min-height: 100vh;
+}
+#home {
+    background: #f4f4f4;
+    text-align: center;
+}
+#about {
+    background: #ddd;
+    text-align: center;
+}
+#projects {
+    background: #ccc;
+    text-align: center;
+}
+#contact {
+    background: #bbb;
+    text-align: center;
+}
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    max-width: 400px;
+    margin: 0 auto;
+}
+form label {
+    text-align: left;
+}
+form input, form textarea, form button {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+form button {
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+}
+form button:hover {
+    background: #555;
+}
+@media (max-width: 768px) {
+    
+    header {
+        width: 100%; 
+        height: auto; 
+        padding: 1rem 0;
+    }
+    nav ul {
+        flex-direction: row; 
+        justify-content: space-around; 
+        gap: 0.5rem; 
+    }
+    main {
+        margin-left: 0; 
+        padding-left: 10px; 
+    }
+    section {
+        padding: 2rem 1rem; 
+    }
+    footer {
+        padding: 0.5rem 0; 
+    }
+    nav a {
+        font-size: 1rem; 
+    }
+    form input, form textarea, form button {
+        font-size: 1rem; 
+    }
+}
+@media (max-width: 480px) {
+    nav a {
+        font-size: 0.9rem;
+    }
+}
